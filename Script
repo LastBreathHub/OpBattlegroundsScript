@@ -1,0 +1,24 @@
+local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/Arceus-X-UI-Library/main/source.lua"))()
+lib:SetTitle("Last Breath Hub | OP Battlegrounds")
+lib:SetIcon("http://www.roblox.com/asset/?id=9178187770")
+local a = workspace.Gravity
+
+lib:SetTheme("Ocean")
+lib:AddButton("Get Early Access", function()
+
+game.Players.LocalPlayer.EarlyAccess.Value=true
+end)
+
+lib:AddButton("---NO CD", function()
+
+end) 
+
+lib:AddButton("Enable", function()
+
+game.Players.LocalPlayer.NoCD.Value=true
+end)
+
+lib:AddButton("Disable", function()
+
+game.Players.LocalPlayer.NoCD.Value=false
+end)
